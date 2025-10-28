@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Halloween Fun</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <style>
         body {
             box-sizing: border-box;
             margin: 0;
             padding: 0;
-            font-family: 'Comic Sans MS', cursive, sans-serif;
+            font-family: 'Press Start 2P', 'Courier New', 'Monaco', 'Menlo', 'Consolas', monospace;
             background: linear-gradient(135deg, #2d1b69 0%, #11001c 100%);
             background-attachment: fixed;
             min-height: 100vh;
@@ -121,6 +122,11 @@
             text-shadow: 4px 4px 0px #000, 8px 8px 0px #ff4500;
             margin-bottom: 1rem;
             animation: glow 2s ease-in-out infinite alternate;
+            line-height: 1.2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
         }
 
         @keyframes glow {
@@ -129,27 +135,30 @@
         }
 
         .play-o-container {
-            display: inline-block;
+            display: inline-flex;
             position: relative;
-            margin: 0 0.2rem;
+            margin: 0 0.1rem;
+            align-items: center;
+            justify-content: center;
         }
 
         .play-button {
             background: linear-gradient(45deg, #ff6b35, #ff4500);
             border: 4px solid #000;
             border-radius: 50%;
-            width: 80px;
-            height: 80px;
-            font-size: 2rem;
+            width: 5rem;
+            height: 5rem;
+            font-size: 2.5rem;
             font-weight: bold;
             color: white;
             cursor: pointer;
             transition: all 0.3s ease;
-            text-shadow: 2px 2px 0px #000;
+            text-shadow: 4px 4px 0px #000, 8px 8px 0px #ff4500;
             box-shadow: 0 6px 0 #cc3700, 0 8px 15px rgba(0,0,0,0.3);
             display: flex;
             align-items: center;
             justify-content: center;
+            font-family: 'Press Start 2P', 'Courier New', 'Monaco', 'Menlo', 'Consolas', monospace;
         }
 
         .play-button:hover {
@@ -413,9 +422,10 @@
             }
             
             .play-button {
-                width: 60px;
-                height: 60px;
-                font-size: 1.5rem;
+                width: 2.5rem;
+                height: 2.5rem;
+                font-size: 1.2rem;
+                border: 3px solid #000;
             }
             
             .game-title {
@@ -439,13 +449,14 @@
 
         @media (max-width: 480px) {
             .halloween-title {
-                font-size: 2rem;
+                font-size: 1.8rem;
             }
             
             .play-button {
-                width: 50px;
-                height: 50px;
-                font-size: 1.2rem;
+                width: 1.8rem;
+                height: 1.8rem;
+                font-size: 0.9rem;
+                border: 2px solid #000;
             }
             
             .game-title {
@@ -485,7 +496,13 @@
     <!-- Homepage -->
     <main class="homepage" id="homepage">
         <div class="title-container">
-            <h1 class="halloween-title">HALL<span class="play-o-container"><button class="play-button" onclick="startGame()">▶</button></span>WEEN</h1>
+            <h1 class="halloween-title">
+                <span>HALL</span>
+                <span class="play-o-container">
+                    <button class="play-button" onclick="startGame()">▶</button>
+                </span>
+                <span>WEEN</span>
+            </h1>
         </div>
         
 
@@ -529,7 +546,7 @@
     <footer class="footer">
         <p class="footer-text">
             <span class="footer-icon">🎃</span>
-            Developed by <span class="creator-name">Aditya Srinivas</span>
+            Created by <span class="creator-name">Aditya Srinivas</span>
             <span class="footer-icon">👻</span>
         </p>
     </footer>
@@ -764,5 +781,5 @@
             startGhostAppearance();
         };
     </script>
-<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'994a5d6ed24e54a9',t:'MTc2MTQ4NjAyMS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'995aaea8707c0803',t:'MTc2MTY1NzEyMC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
